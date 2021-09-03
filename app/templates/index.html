@@ -123,7 +123,7 @@ margin: auto;
     {% for stocks_infor in stocks_infors %}
           <tr>
 
-      <td>{{stocks_infor['date'][6:8]}} tháng {{stocks_infor['date'][4:6]}} năm {{stocks_infor['date'][0:4]}}</td>
+      <td>{{stocks_infor['date']}}</td>
 
      <td>{{'{:,.2f}'.format(stocks_infor['gia_tri_tai_san_thuc']) | replace(',','*') | replace('.',',') | replace('*','.')}}</td>
       <td>{{'{:,.2f}'.format(stocks_infor['lai_lo_tien_ban_dau']) | replace(',','*') | replace('.',',') | replace('*','.')}}</td>
